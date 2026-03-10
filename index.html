@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }  
+
+        .karta {
+            background-color: #111827;
+            color: white;
+            width: 95%;
+            max-width: 400px;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+
+        .zdjecie-profilowe {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px auto;
+            display: block;
+            border: 3px solid #14b8a6;
+        }
+
+        h1 {
+            margin: 10px 0 5px 0;
+            font-size: 22px;
+        }
+
+        .opis {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+
+        .przycisk {
+            display: block;
+            background-color: #14b8a6;
+            color: black;
+            text-decoration: none;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .przycisk:hover {
+            background-color: #0d9488;
+            transform: scale(1.03);
+        }
+
+        .media-spolecznosciowe {
+            margin-top: 25px;
+        }
+
+        .media-spolecznosciowe a {
+            color: white;
+            margin: 0 12px;
+            font-size: 22px;
+            transition: 0.2s;
+        }
+
+        .media-spolecznosciowe a:hover {
+            color: #14b8a6;
+            transform: scale(1.2);
+        }
+
+        @media (min-width: 768px) {
+            .karta {
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="karta">
+
+        <img src="profil.jpg" alt="Zdjęcie profilowe" class="zdjecie-profilowe">
+
+        <h1>Mikołaj Goździewicz</h1>
+        <p class="opis">Web Master, Game Developer i Producent Muzyczny</p>
+
+        <a href="#" class="przycisk">Projekty programistyczne</a>
+        <a href="#" class="przycisk">Twórczość muzyczna</a>
+        <a href="#" class="przycisk">Kontakt</a>
+
+        <div class="media-spolecznosciowe">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
